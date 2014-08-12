@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Gooooooooooonster</title>
+	<script type="text/javascript" src="./jquery-1.11.1.min.js"></script>
+	<script type="text/javascript">
+		function gonster(ele){
+			var t=$("."+ele+" strong").text();
+			var i=t.indexOf("o");
+			var nT=t.substring(0,i)+"o"+t.substring(i);
+			$("."+ele+" strong").text(nT);
+		}
+
+	</script>
+</head>
+<body>
+	<div class="g-title"><strong>Gonster</strong></div>
+	<div><img src="http://31.media.tumblr.com/b119f46f36ada62e952baadebfae5fb3/tumblr_na0k4sDifR1st5lhmo1_1280.jpg" width="800" height="600"/></div>
+	<div><button onclick="gonster('g-title');">(╯‵□′)╯︵┻━┻</button></div>
+</body>
+</html>
