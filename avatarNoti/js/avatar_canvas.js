@@ -53,7 +53,16 @@ var dropCallback=function(event){
 		};
 	}
 };
-document.addEventListener("dragenter",dropCallback);
-document.addEventListener("dragover",dropCallback);
-document.addEventListener("drop",dropCallback);
+
+(function(){
+	document.addEventListener("dragenter",dropCallback);
+	document.addEventListener("dragover",dropCallback);
+	document.addEventListener("drop",dropCallback);
+	document.addEventListener("DOMContentLoaded",function(){
+		var num=Math.ceil((Math.random()*120));
+		if(num>99) num="99+";
+		var notiNum=document.getElementById("notiNum");
+		notiNum.value=num;
+	});
+})();
 
