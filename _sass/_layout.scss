@@ -2,8 +2,9 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    background-color: $grey-color-dark;
+    border-bottom: 4px solid $grey-color-pitch;
+    border-top: 1px solid $grey-color-pitch;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -16,10 +17,17 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    transition: text-shadow 1s;
 
     &,
-    &:visited {
-        color: $grey-color-dark;
+    &:visited,
+    &:hover {
+        text-decoration: none;
+        color: $nav-font-color;        
+        text-shadow: 0 2px 0 rgba(255, 255, 255, .1);
+    }
+    &:hover {
+        text-shadow: 0 2px 0 rgba(255, 255, 255, .4);
     }
 }
 
@@ -32,21 +40,25 @@
     }
 
     .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
-
+        color: $nav-font-color;
+        line-height: $base-line-height;        
+        text-shadow: 0 1px 0 rgba(255, 255, 255, .4);
+       &:hover {
+            text-decoration: none;
+        }
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
             margin-left: 20px;
         }
     }
 
-    @include media-query($on-palm) {
+    @include media-query($on-palm) {        
+        color: $text-color;
         position: absolute;
         top: 9px;
         right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
+        background-color: $nav-color;
+        border-bottom: 2px solid $grey-color-pitch;
         border-radius: 5px;
         text-align: right;
 
@@ -64,7 +76,7 @@
                 height: 15px;
 
                 path {
-                    fill: $grey-color-dark;
+                    fill: $nav-font-color;
                 }
             }
         }
@@ -82,6 +94,9 @@
         .page-link {
             display: block;
             padding: 5px 10px;
+            &:hover {
+                background-color: $grey-color;
+            }
         }
     }
 }
@@ -94,6 +109,10 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+}
+
+.site-footer .user-name {
+        vertical-align: top;
 }
 
 .footer-heading {
@@ -163,6 +182,8 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    background-color: $page-content-background-color;
+    min-height: 65%;
 }
 
 .page-heading {

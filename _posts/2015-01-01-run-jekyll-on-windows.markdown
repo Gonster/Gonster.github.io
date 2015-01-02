@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "在windows下运行Jekyll"
+title:  "在Windows下运行Jekyll"
 date:   2015-01-01 22:42:29
 categories: jekyll windows
 ---
