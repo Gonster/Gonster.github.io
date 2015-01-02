@@ -21,7 +21,7 @@ gem sources --add http://rubygems.org/
 
 ###3. 安装Jekyll
 在repository下创建了`Gemfile`
-{% highlight ruby %}
+{% highlight Ruby %}
 source 'http://rubygems.org'
 gem 'github-pages'
 {% endhighlight %}
