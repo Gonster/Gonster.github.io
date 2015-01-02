@@ -7,14 +7,33 @@ layout: default
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
+    {% for post in paginator.posts %}
+    <li>
+      <a href="{{ post.url | prepend: site.baseurl }}">
         <span class="post-meta">{{ post.date | date: "%Y-%m-%-d" }}</span>
 
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <span class="post-link">{{ post.title }}</span>
         </h2>
-      </li>
+        <span class="post-summary">{{ post.content | truncatewords:20 |  strip_html }}</span>
+      </a>
+    </li>
     {% endfor %}
+    <!-- Pagination links -->
+    <div>
+      <ul class="pager">
+      {% if paginator.previous_page %}
+        <li class="button"><a href="{{ paginator.previous_page_path }}"><strong>&lt;</strong></a></li>
+      {% else %}
+        <li class="disabled button"><span><strong>&lt;</strong></span></li>
+      {% endif %}
+        <li class="page-num"><span>{{ paginator.page }} / {{ paginator.total_pages }}</span></li>
+      {% if paginator.next_page %}
+        <li class="button"><a href="{{ paginator.next_page_path }}"><strong>&gt;</strong></a></li>
+      {% else %}
+        <li class="disabled button"><span><strong>&gt;</strong></span></li>
+      {% endif %}
+      </ul>
+    </div>
   </ul>
 </div>

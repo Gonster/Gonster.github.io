@@ -19,9 +19,10 @@ $page-content-background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
+$grey-color-bright: lighten($grey-color, 47%);
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 30%);
-$grey-color-pitch:  darken($grey-color, 35%);
+$grey-color-pitch:  darken($grey-color, 40%);
 $nav-font-color:  #FFF;
 $nav-color:  darken($grey-color, 20%);
 
