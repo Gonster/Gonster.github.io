@@ -7,3 +7,4 @@ github_username:  Gonster
 
 # Build settings
 markdown: kramdown
+highlighter: Rouge
