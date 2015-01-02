@@ -13,8 +13,7 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
-html,body {
-    height: 100%;
+body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
@@ -24,10 +23,7 @@ html,body {
     -webkit-text-size-adjust: 100%;
 }
 
-a:active,
-a:focus{
-    background-color: transparent;
-}
+
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -116,8 +112,8 @@ blockquote {
     border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
-    letter-spacing: 0;
-    font-style: normal;
+    letter-spacing: -1px;
+    font-style: italic;
 
     > :last-child {
         margin-bottom: 0;
@@ -134,7 +130,7 @@ code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #f7f7f7;
+    background-color: #eef;
 }
 
 code {
@@ -143,7 +139,7 @@ code {
 
 pre {
     padding: 8px 12px;
-    overflow-x: auto;
+    overflow-x: scroll;
 
     > code {
         border: 0;
@@ -199,8 +195,8 @@ pre {
         display: inline-block;
         width: 16px;
         height: 16px;
-        vertical-align: top;
-        margin-top: 2px;
+        vertical-align: middle;
+
         path {
             fill: $grey-color;
         }
