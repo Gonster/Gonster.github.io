@@ -6,4 +6,5 @@ url: "http://gonster.github.io" # the base hostname & protocol for your site
 github_username:  Gonster
 
 # Build settings
-markdown: kramdown
+markdown: Redcarpet
+highlighter: Rouge
