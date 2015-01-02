@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "在Windows下运行Jekyll"
-date:   2015-01-01 22:42:29
+date:   2015-1-1 22:42:29
 categories: jekyll windows
 ---
 在windows配置运行环境坑确实不少\_(:з」∠)\_，[github帮助页面](https://help.github.com/articles/using-jekyll-with-pages/)上看起来似乎是挺简单的。
