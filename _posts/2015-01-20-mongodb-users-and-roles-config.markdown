@@ -6,10 +6,10 @@ categories: mongodb
 ---
 #####mongodb version 2.6.2
 
-####无任何数据的空mongodb数据库
+###无任何数据的空mongodb数据库
 空数据库中将无任何user数据，第一次登录可通过mongod加--noauth参数（其实不添--auth参数应该就无权限验证）或通过localhost exception（默认开启），启动时可通过--setParameter设定是否开启。启动mongod后使用mongo即可登录。
 
-####创建用户
+###创建用户
 
 使用admin数据库
 
@@ -34,7 +34,7 @@ categories: mongodb
 之后使用mongod –auth有权限的方式启动后，可使用mongo 【数据库名】-u 【用户名】 -p 【密码】的参数登录，之后用户可执行赋予的权限范围内的命令。
 
 
-####ip访问限制
+###ip访问限制
 我没有从mongodb的说明文档中找到限制某用户只能从某ip登录的设置方式，说明文档只提及了两种关于数据库访问显示的方法：
 
 1.通过配置文件或启动参数，在mongod启动的时候设定bind_ip，如：
@@ -50,6 +50,6 @@ categories: mongodb
 
 2.是使用操作系统或第三方解决方案来限制对于mongod运行实例的ip和端口访问，如Linux使用IPtable，windows使用防火墙或其他方案。
 
-####最后
+###最后
 需要获得其他内容建议访问[http://docs.mongodb.org/manual/reference/](http://docs.mongodb.org/manual/reference/)查看。
 另外如果用户通过mongo登录后，mongod命令行提示Unauthorized not authorized on XXX to execute command之类的内容并不是登录认证，只是用户分配的角色是有限制的，不能执行所命令。
