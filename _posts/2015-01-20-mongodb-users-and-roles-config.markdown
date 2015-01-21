@@ -51,5 +51,11 @@ categories: mongodb
 2.是使用操作系统或第三方解决方案来限制对于mongod运行实例的ip和端口访问，如Linux使用IPtable，windows使用防火墙或其他方案。
 
 ###最后
+
 需要获得其他内容建议访问[http://docs.mongodb.org/manual/reference/](http://docs.mongodb.org/manual/reference/)查看。
-另外如果用户通过mongo登录后，mongod命令行提示Unauthorized not authorized on XXX to execute command之类的内容并不是登录认证，只是用户分配的角色是有限制的，不能执行所命令。
+另外如果用户通过mongo登录后，mongod命令行提示Unauthorized not authorized on XXX to execute 
+
+command之类的内容并不是登录认证，只是用户分配的角色是有限制的，不能执行所命令。
+
+话说用MongoVUE 1.5.3创建的用户用的是版本1的用户权限方案还是蛮坑的，执行 db.getSiblingDB("admin").runCommand({authSchemaUpgrade: 1 }); 可以升级权限方案。
+
