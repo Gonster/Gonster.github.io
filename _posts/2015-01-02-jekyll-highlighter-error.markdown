@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "GitHub Pages build failure caused by syntax highlighter"
-date:   2015-1-2 02:17:47
+date:   2015-01-02 02:17:47
 categories: GitHub-Pages highlighter
 ---
 不得不说，从GitHub发送的Page build failure真没什么收获

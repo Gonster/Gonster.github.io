@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "mongoDB用户权限配置笔记"
-date:  2015-1-20 17:23:04
+date:  2015-01-20 17:23:04
 categories: mongodb
 ---
 #####mongodb version 2.6.2
