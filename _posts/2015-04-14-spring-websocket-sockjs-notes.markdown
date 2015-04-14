@@ -11,8 +11,10 @@ categories: websocket
 ###准备
 当然咯，先是查各种资料，问各路大神。
 其实一开始我主要是有两个问题搞不明白：
-1. WebSocket 的 Endpoint（javax.websocket.Endpoint）或者说是 Spring 的 WebSocketHandler 和每个用户 session 的关系，在Handler中如何管理 WebSocket session
-2. WebSocket session 如何和现有的 HttpSession 对应，或者通过 HttpSession 和系统中的用户对应
+
+1.  WebSocket 的 Endpoint（javax.websocket.Endpoint）或者说是 Spring 的 WebSocketHandler 和每个用户 session 的关系，在Handler中如何管理 WebSocket session
+
+2.  WebSocket session 如何和现有的 HttpSession 对应，或者通过 HttpSession 和系统中的用户对应
 
 第一个问题主要是并没有看到 Spring 官网的范例有对 Session 的存储处理，所以我就疑惑了，服务器要主动向用户发信息要怎么获取 session 呢，是 Spring 已经替我处理了还是需要我自己维护 session 。看到网上很多简易的例子上都没有处理用户的问题，甚至有些直接在连接时由 URI 的参数传递用户名给后台用来分辨用户，毕竟是例子嘛 - -| 也不能要求太高。
 
