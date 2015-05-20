@@ -41,7 +41,7 @@ categories: java
 还是感觉有点反人类，所以以后还是这么写吧：
   
 {% highlight java %}
-"我是一个包含\"引号的字符串".replaceAll("\"",Matcher.quoteReplacement("\\\"))
+"我是一个包含\"引号的字符串".replaceAll("\"",Matcher.quoteReplacement("\\\""))
 {% endhighlight %}
   
 其实我觉得`String`的`replace`和`replaceAll`两个方法参数也挺坑的，第一个参数`replace`的不是正则，`replaceAll`的是正则。我为什么觉得这个坑，其实是因为以前踩过别人因为这点不同写出来的bug\_(:з」∠)\_
