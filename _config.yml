@@ -9,4 +9,4 @@ paginate_path: "/page:num/"
 
 # Build settings
 markdown: kramdown
-# highlighter: Rouge
+highlighter: Rouge

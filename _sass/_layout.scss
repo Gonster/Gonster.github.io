@@ -2,13 +2,22 @@
  * Site header
  */
 .site-header {
-    background-color: $grey-color-dark;
-    border-bottom: 4px solid $grey-color-pitch;
-    border-top: 1px solid $grey-color-pitch;
-    min-height: 56px;
+    background-color: rgba(255,255,255,0.1);
+    /*border-bottom: 4px solid $grey-color-pitch;*/
+    /*border-top: 1px solid $grey-color-pitch;*/
+    min-height: 356px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
+    .wrapper {
+        padding-top: 223px;
+       /*background-color: rgba(255,255,255,1); */
+    }
+}
+
+.zigzag {
+    height: 16px;
+    background: url("/img/static/zigzag.png");
 }
 
 .site-title {
@@ -18,39 +27,49 @@
     margin-bottom: 0;
     padding: 0 10px 0 10px;  
     float: left;
-    border-left: 1px solid $grey-color-dark; 
-    border-right: 1px solid $grey-color-dark; 
+    /*border-left: 1px solid $grey-color-dark; */
+    /*border-right: 1px solid $grey-color-dark; */
     transition: text-shadow 0.5s, background-color 0.5s, border 0.5s;
 
     &,
     &:visited{
         color: $nav-font-color;        
-        text-shadow: 0 2px 0 rgba(255, 255, 255, .1);
+        text-shadow: 0 2px 0 rgba(0, 0, 0, .5);
     }
     &:hover {
-        text-shadow: 0 2px 0 rgba(255, 255, 255, .4);
-        background-color: lighten($grey-color-pitch, 4%); 
-        border-left: 1px solid lighten($grey-color-pitch, 2%); 
-        border-right: 1px solid lighten($grey-color-pitch, 2%); 
+        text-shadow: 0 2px 0 rgba(0, 0, 0, .7);
+        /*background-color: lighten($grey-color-pitch, 4%); */
+        /*border-left: 1px solid lighten($grey-color-pitch, 2%); */
+        /*border-right: 1px solid lighten($grey-color-pitch, 2%); */
+    }
+
+    img {
+        transition: margin 0.5s;
+        width: 128px;
+        height: 128px;
+        &:hover {
+            margin-left: 4px;
+        }
     }
 }
 
 .site-nav {
+    box-shadow: 1px 0 3px rgba(0,0,0,.3);
     float: right;
     line-height: 56px;
-
+    margin-top: 30px;
     .menu-icon {
         display: none;
     }
 
     .page-link {
-        color: $nav-font-color;
+        color: $grey-color;
         line-height: $base-line-height;        
-        text-shadow: 0 1px 0 rgba(255, 255, 255, .4);        
+        text-shadow: 0 1px 0 rgba(0, 0, 0, .7);        
         transition: text-shadow 0.5s;
        &:hover {
             text-decoration: none;
-            text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);      
+            text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);      
         }
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
@@ -58,13 +77,13 @@
         }
     }
 
-    @include media-query($on-palm) {        
-        color: $text-color;
+    /*@include media-query($on-palm) {        */
+        color: $grey-color;
         position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $nav-color;
-        border-bottom: 2px solid $grey-color-pitch;
+        top: 40px;
+        right: 45px;
+        background-color: $grey-color-bright;
+        border-bottom: 2px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
 
@@ -82,7 +101,7 @@
                 height: 15px;
 
                 path {
-                    fill: $nav-font-color;
+                    fill: $grey-color;
                 }
             }
         }
@@ -101,7 +120,11 @@
             display: block;
             padding: 5px 10px;
         }
-    }
+        @include media-query($on-palm) { 
+            margin-top: 45px;
+            top: auto;
+        }
+    /*}*/
 }
 
 
@@ -112,6 +135,7 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    background-color: rgba(255,255,255,1);
 }
 
 .site-footer .user-name {
