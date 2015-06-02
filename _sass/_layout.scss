@@ -38,6 +38,7 @@
     margin-bottom: 0;
     padding: 0 10px 0 10px;  
     float: left;
+
     /*border-left: 1px solid $grey-color-dark; */
     /*border-right: 1px solid $grey-color-dark; */
     transition: text-shadow 0.5s, background-color 0.5s, border 0.5s;
@@ -54,13 +55,17 @@
         /*border-right: 1px solid lighten($grey-color-pitch, 2%); */
     }
 
-    img {
-        transition: margin 0.5s;
-        width: 128px;
-        height: 128px;
-        &:hover {
-            margin-left: 4px;
-        }
+}
+.mascot {
+    transition: margin 0.5s;
+
+    width: 328px;
+    height: 128px;
+
+    background: url("/Gonster-transparent.png") no-repeat;
+    background-size: 128px 128px;
+    &:hover {
+        margin-left: 4px;
     }
 }
 
