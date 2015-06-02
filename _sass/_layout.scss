@@ -25,6 +25,10 @@
 .zigzag {
     height: 16px;
     background: url("/img/static/zigzag.png");
+    @include media-query($on-palm) { 
+        height: 8px;
+        background-size: 16px 8px;
+    }
 }
 
 .site-title {
