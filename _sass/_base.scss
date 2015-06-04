@@ -27,6 +27,8 @@ html,body {
     background: $background-color url('/img/static/bg.jpg');
     @include media-query($on-palm) { 
         background-size: 275px;
+        word-wrap: break-word;
+        line-height: 1.5;
     }
     -webkit-text-size-adjust: 100%;
 }
