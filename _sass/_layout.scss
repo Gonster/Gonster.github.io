@@ -9,6 +9,7 @@
 
     position: static;
     .wrapper {
+        z-index: 1;
         -webkit-animation: slide-down 1.2s ease;
         -moz-animation: slide-down 1.2s ease;
         animation: slide-down 1.2s ease;
@@ -83,6 +84,7 @@
     float: right;
     line-height: 56px;
     margin-top: 30px;
+    z-index: 3;
     .menu-icon {
         display: none;
     }
