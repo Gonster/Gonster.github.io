@@ -9,17 +9,17 @@
 
     position: static;
     .wrapper {
-/*        -webkit-animation: slide-down 2.5s cubic-bezier(0.23,1,.32,1);
-        -moz-animation: slide-down 2.5s cubic-bezier(0.23,1,.32,1);
-        animation: slide-down 2.5s cubic-bezier(0.23,1,.32,1);*/
+        -webkit-animation: slide-down 2.5s ease;
+        -moz-animation: slide-down 2.5s ease;
+        animation: slide-down 2.5s ease;
         position: relative;
         padding-top: 223px;
        /*background-color: rgba(255,255,255,1); */
        @include media-query($on-palm) { 
 
-/*            -webkit-animation: slide-down-63 1.5s cubic-bezier(0.23,1,.32,1);
-            -moz-animation: slide-down-63 1.5s cubic-bezier(0.23,1,.32,1);
-            animation: slide-down-63 1.5s cubic-bezier(0.23,1,.32,1);*/
+            -webkit-animation: slide-down-63 1.5s ease;
+            -moz-animation: slide-down-63 1.5s ease;
+            animation: slide-down-63 1.5s ease;
            padding-top: 63px;
        }
     }
@@ -65,9 +65,9 @@
 }
 .mascot {
     transition: margin 0.5s;
-    -webkit-animation: slide-fade-in 2.5s cubic-bezier(0.23,1,.32,1);
-    -moz-animation: slide-fade-in 2.5s cubic-bezier(0.23,1,.32,1);
-    animation: slide-fade-in 2.5s cubic-bezier(0.23,1,.32,1);
+    -webkit-animation: grow 2.5s cubic-bezier(0.23,1,.32,1);
+    -moz-animation: grow 2.5s cubic-bezier(0.23,1,.32,1);
+    animation: grow 2.5s cubic-bezier(0.23,1,.32,1);
     width: 128px;
     height: 128px;
 
@@ -476,7 +476,7 @@
 
 @-webkit-keyframes slide-down {
     from {
-        padding-top: 0;
+        padding-top: 50px;
     }
 
     to {
@@ -486,7 +486,7 @@
 
 @-o-keyframes slide-down {
     from {
-        padding-top: 0;
+        padding-top: 50px;
     }
 
     to {
@@ -496,7 +496,7 @@
 
 @-ms-keyframes slide-down {
     from {
-        padding-top: 0;
+        padding-top: 50px;
     }
 
     to {
@@ -506,7 +506,7 @@
 
 @-moz-keyframes slide-down {
     from {
-        padding-top: 0;
+        padding-top: 50px;
     }
 
     to {
@@ -516,7 +516,7 @@
 
 @keyframes slide-down {
     from {
-        padding-top: 0;
+        padding-top: 50px;
     }
 
     to {
