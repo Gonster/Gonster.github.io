@@ -5,11 +5,14 @@
     background-color: rgba(255,255,255,0);
     /*border-bottom: 4px solid $grey-color-pitch;*/
     /*border-top: 1px solid $grey-color-pitch;*/
-    min-height: 356px;
+    /*min-height: 356px;*/
 
     // Positioning context for the mobile navigation icon
     position: relative;
     .wrapper {
+        -webkit-animation: slide-down 2.5s cubic-bezier(0.23,1,.32,1);
+        -moz-animation: slide-down 2.5s cubic-bezier(0.23,1,.32,1);
+        animation: slide-down 2.5s cubic-bezier(0.23,1,.32,1);
         padding-top: 223px;
        /*background-color: rgba(255,255,255,1); */
        @include media-query($on-palm) { 
@@ -464,5 +467,55 @@
     to {
         opacity: 1;
         transform: translate(0,0,0)
+    }
+}
+
+@-webkit-keyframes slide-down {
+    from {
+        margin-top: 0;
+    }
+
+    to {
+        margin-top: 223px;
+    }
+}
+
+@-o-keyframes slide-down {
+    from {
+        margin-top: 0;
+    }
+
+    to {
+        margin-top: 223px;
+    }
+}
+
+@-ms-keyframes slide-down {
+    from {
+        margin-top: 0;
+    }
+
+    to {
+        margin-top: 223px;
+    }
+}
+
+@-moz-keyframes slide-down {
+    from {
+        margin-top: 0;
+    }
+
+    to {
+        margin-top: 223px;
+    }
+}
+
+@keyframes slide-down {
+    from {
+        margin-top: 0;
+    }
+
+    to {
+        margin-top: 223px;
     }
 }
