@@ -7,22 +7,26 @@
     /*border-top: 1px solid $grey-color-pitch;*/
     /*min-height: 356px;*/
 
-    // Positioning context for the mobile navigation icon
-    position: relative;
+    position: static;
     .wrapper {
         -webkit-animation: slide-down 2.5s cubic-bezier(0.23,1,.32,1);
         -moz-animation: slide-down 2.5s cubic-bezier(0.23,1,.32,1);
         animation: slide-down 2.5s cubic-bezier(0.23,1,.32,1);
+        position: relative;
         padding-top: 223px;
        /*background-color: rgba(255,255,255,1); */
        @include media-query($on-palm) { 
+
+            -webkit-animation: slide-down-63 1.5s cubic-bezier(0.23,1,.32,1);
+            -moz-animation: slide-down-63 1.5s cubic-bezier(0.23,1,.32,1);
+            animation: slide-down-63 1.5s cubic-bezier(0.23,1,.32,1);
            padding-top: 63px;
        }
     }
 
-    @include media-query($on-palm) { 
+/*    @include media-query($on-palm) { 
         min-height: 196px;
-    }
+    }*/
 }
 
 .zigzag {
@@ -517,5 +521,56 @@
 
     to {
         padding-top: 223px;
+    }
+}
+
+
+@-webkit-keyframes slide-down-63 {
+    from {
+        padding-top: 0;
+    }
+
+    to {
+        padding-top: 63px;
+    }
+}
+
+@-o-keyframes slide-down-63 {
+    from {
+        padding-top: 0;
+    }
+
+    to {
+        padding-top: 63px;
+    }
+}
+
+@-ms-keyframes slide-down-63 {
+    from {
+        padding-top: 0;
+    }
+
+    to {
+        padding-top: 63px;
+    }
+}
+
+@-moz-keyframes slide-down-63 {
+    from {
+        padding-top: 0;
+    }
+
+    to {
+        padding-top: 63px;
+    }
+}
+
+@keyframes slide-down-63 {
+    from {
+        padding-top: 0;
+    }
+
+    to {
+        padding-top: 63px;
     }
 }
