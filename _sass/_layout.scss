@@ -58,6 +58,8 @@
 }
 .mascot {
     transition: margin 0.5s;
+    -webkit-animation: grow 2.5s cubic-bezier(0.23,1,.32,1);
+    -moz-animation: grow 2.5s cubic-bezier(0.23,1,.32,1);
     animation: grow 2.5s cubic-bezier(0.23,1,.32,1);
     width: 128px;
     height: 128px;
@@ -243,7 +245,9 @@
 .post-list {
     margin-left: 0;
     list-style: none;
-
+    -webkit-animation: slide-fade-in .8s ease;
+    -moz-animation: slide-fade-in .8s ease;
+    animation: slide-fade-in .8s ease;
     > li {       
         transition: box-shadow 0.5s, background-color 0.5s;
         background-color: $li-color;
@@ -277,6 +281,12 @@
 /**
  * Posts
  */
+.post {
+    -webkit-animation: slide-fade-in .8s ease;
+    -moz-animation: slide-fade-in .8s ease;
+    animation: slide-fade-in .8s ease;
+}
+
 .post-header {
     margin-bottom: $spacing-unit;
 }
@@ -332,5 +342,127 @@
         box-shadow: 0 0 4px rgba(0,0,0,.5);
         background: url("/Gonster-128.png") no-repeat;
         background-size: 128px 128px;
+    }
+}
+
+
+@-webkit-keyframes grow {
+    from {
+        opacity: .85;
+        -webkit-transform: scale(0.5)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate(1)
+    }
+}
+
+@-o-keyframes grow {
+    from {
+        opacity: .85;
+        -o-transform: scale(0.5)
+    }
+
+    to {
+        opacity: 1;
+        -o-transform: translate(1)
+    }
+}
+
+@-ms-keyframes grow {
+    from {
+        opacity: .85;
+        -ms-transform: scale(0.5)
+    }
+
+    to {
+        opacity: 1;
+        -ms-transform: translate(1)
+    }
+}
+
+@-moz-keyframes grow {
+    from {
+        opacity: .85;
+        -moz-transform: scale(0.5)
+    }
+
+    to {
+        opacity: 1;
+        -moz-transform: translate(1)
+    }
+}
+
+@keyframes grow {
+    from {
+        opacity: .85;
+        transform: scale(0.5)
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(1)
+    }
+}
+
+
+@-webkit-keyframes slide-fade-in {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0,20px,0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate(0,0,0)
+    }
+}
+
+@-o-keyframes slide-fade-in {
+    from {
+        opacity: 0;
+        -o-transform: translate3d(0,20px,0)
+    }
+
+    to {
+        opacity: 1;
+        -o-transform: translate(0,0,0)
+    }
+}
+
+@-ms-keyframes slide-fade-in {
+    from {
+        opacity: 0;
+        -ms-transform: translate3d(0,20px,0)
+    }
+
+    to {
+        opacity: 1;
+        -ms-transform: translate(0,0,0)
+    }
+}
+
+@-moz-keyframes slide-fade-in {
+    from {
+        opacity: 0;
+        -moz-transform: translate3d(0,20px,0)
+    }
+
+    to {
+        opacity: 1;
+        -moz-transform: translate(0,0,0)
+    }
+}
+
+@keyframes slide-fade-in {
+    from {
+        opacity: 0;
+        transform: translate3d(0,20px,0)
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0,0,0)
     }
 }
