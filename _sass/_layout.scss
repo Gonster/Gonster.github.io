@@ -58,7 +58,7 @@
 }
 .mascot {
     transition: margin 0.5s;
-    
+    animation: grow 2.5s cubic-bezier(0.23,1,.32,1);
     width: 128px;
     height: 128px;
 
