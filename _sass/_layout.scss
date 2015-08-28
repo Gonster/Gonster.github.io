@@ -10,9 +10,9 @@
     position: static;
     .wrapper {
         z-index: 1;
-        -webkit-animation: slide-down 1.2s ease;
-        -moz-animation: slide-down 1.2s ease;
-        animation: slide-down 1.2s ease;
+        -webkit-animation: slide-down 1s ease;
+        -moz-animation: slide-down 1s ease;
+        animation: slide-down 1s ease;
         position: relative;
         padding-top: 223px;
        /*background-color: rgba(255,255,255,1); */
@@ -478,7 +478,7 @@
 
 @-webkit-keyframes slide-down {
     from {
-        padding-top: 50px;
+        padding-top: 150px;
     }
 
     to {
@@ -488,7 +488,7 @@
 
 @-o-keyframes slide-down {
     from {
-        padding-top: 50px;
+        padding-top: 150px;
     }
 
     to {
@@ -498,7 +498,7 @@
 
 @-ms-keyframes slide-down {
     from {
-        padding-top: 50px;
+        padding-top: 150px;
     }
 
     to {
@@ -508,7 +508,7 @@
 
 @-moz-keyframes slide-down {
     from {
-        padding-top: 50px;
+        padding-top: 150px;
     }
 
     to {
@@ -518,7 +518,7 @@
 
 @keyframes slide-down {
     from {
-        padding-top: 50px;
+        padding-top: 150px;
     }
 
     to {
