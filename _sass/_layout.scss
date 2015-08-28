@@ -10,17 +10,17 @@
     position: static;
     .wrapper {
         z-index: 1;
-        -webkit-animation: slide-down 1s ease;
-        -moz-animation: slide-down 1s ease;
-        animation: slide-down 1s ease;
+        -webkit-animation: slide-down .6s ease;
+        -moz-animation: slide-down .6s ease;
+        animation: slide-down .6s ease;
         position: relative;
         padding-top: 223px;
        /*background-color: rgba(255,255,255,1); */
        @include media-query($on-palm) { 
 
-            -webkit-animation: slide-down-63 1s ease;
-            -moz-animation: slide-down-63 1s ease;
-            animation: slide-down-63 1s ease;
+            -webkit-animation: slide-down-63 .6s ease;
+            -moz-animation: slide-down-63 .6s ease;
+            animation: slide-down-63 .6s ease;
            padding-top: 63px;
        }
     }
