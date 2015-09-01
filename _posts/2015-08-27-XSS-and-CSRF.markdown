@@ -48,7 +48,7 @@ XSS可以通过中间人攻击来实施，而中间人攻击是很难阻止的�
 ###相关
 [http://security.stackexchange.com/questions/22903/why-refresh-csrf-token-per-form-request](http://security.stackexchange.com/questions/22903/why-refresh-csrf-token-per-form-request)
 
-[https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet)
+[https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet](https://www.owasp.org/index.php/Cross-Site\_Request\_Forgery\_(CSRF)\_Prevention\_Cheat\_Sheet)
 
 [http://stackoverflow.com/questions/20504846/why-is-it-common-to-put-csrf-prevention-tokens-in-cookies](http://stackoverflow.com/questions/20504846/why-is-it-common-to-put-csrf-prevention-tokens-in-cookies)
 
